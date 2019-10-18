@@ -3,7 +3,7 @@
   Layout = "_Layout";
 }
 
-@model HairSalon.Models.Restaurant
+@model HairSalon.Models.Stylist
 @using HairSalon.Models
 
 <h2>@Model.Name</h2>
@@ -11,7 +11,7 @@
 <h3>Here are the clients for your stylist: <h3>
 @if(Model.Clients.Count==0)
 {
-    <p>There are currently no clients for your stylist<p>
+    <p>There are currently no clients for your stylist</p>
 }
 <ul>
 @foreach(Client client in @Model.Clients)
