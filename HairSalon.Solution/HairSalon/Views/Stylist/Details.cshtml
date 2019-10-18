@@ -1,0 +1,24 @@
+ 
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Restaurant
+@using HairSalon.Models
+
+<h2>@Model.Name</h2>
+
+<h3>Here are the clients for your stylist: <h3>
+@if(Model.Clients.Count==0)
+{
+    <p>There are currently no clients for your stylist<p>
+}
+<ul>
+@foreach(Client client in @Model.Clients)
+{
+    <li><h4>@client.Name</h4></li>
+}
+</ul>
+
+<button class="btn btn-default">@Html.ActionLink("Back to stylist list", "Index")</button>
+<button class="btn btn-default">@Html.ActionLink("Add a client to the list", "Create", "Client", new { id = Model.StylistId })</button>
