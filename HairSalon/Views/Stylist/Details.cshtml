@@ -23,3 +23,4 @@
 
 <button class="btn btn-default">@Html.ActionLink("Back to stylist list", "Index")</button>
 <button class="btn btn-default">@Html.ActionLink("Add a client to the list", "Create", "Client", new { id = Model.StylistId })</button>
+<button class="btn btn-default">@Html.ActionLink("Delete this stylist", "Delete", new { id = Model.StylistId })</button>
