@@ -2,8 +2,11 @@
   Layout = "_Layout";
 }
 
+
 @model HairSalon.Models.Client
 @using HairSalon.Models
 
 <h2>@Model.Name</h2>
 <p>They were last seen on @Model.LastVisit</p>
+
+<button class="btn btn-default">@Html.ActionLink("Go back to list of stylists", "Index", "Stylist")</button>

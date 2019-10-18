@@ -14,8 +14,8 @@ This MVC application allows the user to input a list of hair stylists working at
 * _In the command line, navigate to mysql (or use mysql workbench)_
 * _CREATE DATABASE anita_kemp_
 * _USE anita_kemp_
-* _CREATE TABLE stylists (stylistId PRIMARY KEY, NN, AUTO INCREMENT, name VARCHAR(255))_
-* _CREATE TABLE clients (clientId PRIMARY KEY, NN, AUTO INCREMENT, name VARCHAR(255), stylistId INT(11))_
+* _CREATE TABLE stylists (stylistId INT(11) PRIMARY KEY, NN, AUTO INCREMENT, name VARCHAR(255), amountPaid VARCHAR(255))_
+* _CREATE TABLE clients (clientId  INT(11) PRIMARY KEY, NN, AUTO INCREMENT, name VARCHAR(255), stylistId INT(11), lastVisit VARCHAR(255))_
 * _Run dotnet watch run_
 * _Navigate to localhost:5000/_
 
