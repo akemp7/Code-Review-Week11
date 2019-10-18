@@ -10,6 +10,10 @@
     <input type="hidden" name="StylistId" value=@ViewBag.StylistId /> 
     @Html.LabelFor(model => model.Name)
     @Html.TextBoxFor(model => model.Name, new { @class="form-control"})
+
+    @Html.LabelFor(model => model.LastVisit)
+    @Html.TextBoxFor(model => model.LastVisit, new { @class="form-control"})
+
     <input type="submit" value="Add new client" class="btn btn-default" />
 }
 <button class="btn btn-default">@Html.ActionLink("Back to the stylist", "Details", "Stylist", new { id = ViewBag.StylistId })</button>

@@ -5,6 +5,9 @@ namespace HairSalon.Models
     public class Client
     {
         public string Name { get; set; }
+
+        public string LastVisit {get; set; }
+
         public int ClientId { get; set; }
         // public virtual ICollection<Cuisine> Cuisines { get; set; } //this is not necessary?
         public int StylistId { get; set; }

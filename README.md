@@ -17,7 +17,7 @@ This MVC application allows the user to input a list of hair stylists working at
 * _CREATE TABLE stylists (stylistId PRIMARY KEY, NN, AUTO INCREMENT, name VARCHAR(255))_
 * _CREATE TABLE clients (clientId PRIMARY KEY, NN, AUTO INCREMENT, name VARCHAR(255), stylistId INT(11))_
 * _Run dotnet watch run_
-* _Navigate to localhost:5000/
+* _Navigate to localhost:5000/_
 
 
 ## Support and contact details
